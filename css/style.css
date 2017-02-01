@@ -1,42 +1,57 @@
 body {
   background: #607d8b;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .navbar {
   background: rgba(207, 216, 220, 0.7);
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: #212121;
   font-size: 18px;
-  font-family: 'Source Code Pro', monospace;
   transition: all 0.3s;
   margin: 4px;
   text-align: center;
 }
 
 .navbar-default .navbar-nav > .active > a {
-  background: #FFC107;
+  background: #ffc107;
   color: #212121;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a:hover {
-  background: #455A64;
+  background: #455a64;
   color: rgb(207, 216, 220);
 }
 
 .navbar-default .navbar-right > li > a {
-  color: #455A64;
+  color: #455a64;
   font-size: 22px;
 }
 
 .navbar-default .navbar-right > li > a:hover {
   color: #212121;
   background: transparent;
+}
+
+.tooltip-inner {
+         max-width: none;
+         white-space: nowrap;
+}
+
+/*
+ *********************
+ * About page styles *
+ *********************
+*/
+
+#about {
+  margin-top: 80px;
 }
 
 #about img {
@@ -50,7 +65,30 @@ body {
   }
 }
 
-.tooltip-inner {
-         max-width: none;
-         white-space: nowrap;
+h3 {
+  color: #ffc107;
+  margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.skills {
+  list-style: none;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.skills i {
+  font-size: 5em;
+}
+
+.skills span {
+  color: #212121;
+  font-size: 1.1em;
+  display: block;
+  margin-top: 10px;
 }
