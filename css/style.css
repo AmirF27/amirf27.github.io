@@ -3,8 +3,7 @@ body {
 }
 
 .navbar {
-  background: #CFD8DC;
-  opacity: 0.7;
+  background: rgba(207, 216, 220, 0.7);
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #BDBDBD;
@@ -12,9 +11,11 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: #212121;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
   transition: all 0.3s;
-  margin: 5px;
+  margin: 4px;
+  text-align: center;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -25,18 +26,31 @@ body {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a:hover {
   background: #455A64;
-  color: #fff;
+  color: rgb(207, 216, 220);
 }
 
 .navbar-default .navbar-right > li > a {
   color: #455A64;
+  font-size: 22px;
 }
 
 .navbar-default .navbar-right > li > a:hover {
   color: #212121;
-  background: #CFD8DC;
+  background: transparent;
 }
 
 #about img {
   border-radius: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #about img {
+    width: 50%;
+  }
+}
+
+.tooltip-inner {
+         max-width: none;
+         white-space: nowrap;
 }
