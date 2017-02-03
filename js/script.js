@@ -8,7 +8,7 @@ var $root = $('html, body');
 
 $('a').click(function() {
 	$root.animate({
-		scrollTop: $(this).attr("href") == "#about" ? 0 : $($.attr(this, 'href')).offset().top
+		scrollTop: $($.attr(this, 'href')).offset().top - ($(this).attr("href") == "#about" ? 80 : 60)
 	}, 500);
 
     return false;
