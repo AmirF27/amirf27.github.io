@@ -24,13 +24,12 @@ $(document).on("scroll", function() {
       changeActive("#projects");
   }
   else if (!$(".navbar-nav a[href='#contact']").parent().hasClass("active") &&
-    $(this).scrollTop() >= $("#contact").position().top - 60) {
+    $(this).scrollTop() >= $("#contact").position().top - 180) {
       changeActive("#contact");
   }
-});
+}); 
 
 var changeActive = function(target) {
   $(".active").removeClass("active");
   $(".navbar-nav a[href='" + target + "']").parent().addClass("active");
-  console.log(target);
 }
