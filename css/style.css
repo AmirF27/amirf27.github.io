@@ -359,6 +359,27 @@ footer h4 {
   margin: 20px 0;
 }
 
+footer span {
+  display: block;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #bdbdbd;
+}
+
+footer span, footer span a {
+  color: #fff;
+}
+
+footer span a {
+  border-bottom: 1px dotted #4f83c4;
+  transition: all 0.3s;
+}
+
+footer span a:hover {
+  color: #4f83c4;
+  text-decoration: none;
+}
+
 
 
 /*
