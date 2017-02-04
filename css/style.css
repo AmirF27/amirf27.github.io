@@ -198,6 +198,10 @@ section {
   }
 }
 
+.thumbnail {
+  border-color: #bdbdbd;
+}
+
 h2, h3, h4 {
   color: #ffc107;
   margin: 30px 0;
