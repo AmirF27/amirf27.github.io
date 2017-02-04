@@ -5,6 +5,10 @@ body {
   font-size: 16px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .navbar {
   background: rgba(207, 216, 220, 0.92);
   border: none;
@@ -60,9 +64,9 @@ section {
 }
 
 /*
- *********************
- * About page styles *
- *********************
+ ************************
+ * About section styles *
+ ************************
 */
 
 .jumbotron {
@@ -79,7 +83,6 @@ section {
 .jumbotron p {
   font-size: 16px;
   margin: 0;
-  line-height: 1.5;
 }
 
 .jumbotron h4 {
@@ -91,11 +94,17 @@ section {
   .jumbotron h4 {
     text-align: center;
   }
+
+  .btn-default {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #about img {
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   -webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,0.75);
      -moz-box-shadow: 0 0 4px 0 rgba(0,0,0,0.75);
           box-shadow: 0 0 4px 0 rgba(0,0,0,0.75);
@@ -134,9 +143,9 @@ h4 {
 }
 
 /*
- ************************
- * Projects page styles *
- ************************
+ ***************************
+ * Projects section styles *
+ ***************************
 */
 
 #projects {
@@ -216,21 +225,85 @@ h4 {
 }
 
 .links li {
-  margin: 0 10px;
+  /*margin: 0 10px;*/
+}
+
+.links a {
+  padding: 15px;
+  color: #bdbdbd;
 }
 
 .links i {
   font-size: 2em;
-  color: #757575;
   transition: all 0.3s;
 }
 
-.links .fa-github:hover {
+.links a:hover .fa-github {
   color: #4f83c4;
 }
 
-.links .fa-linkedin:hover {
+.links a:hover .fa-linkedin {
   color: #0077b5;
+}
+
+/*
+ **************************
+ * Contact section styles *
+ **************************
+*/
+
+label {
+  color: #fff;
+  font-weight: 400;
+}
+
+.form-control {
+  border-color: #bdbdbd;
+  border-radius: 3px;
+}
+
+.form-control:focus {
+  border-color: #ffc107;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 193, 7, 0.5);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 193, 7, 0.5);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 193, 7, 0.5);
+}
+
+.btn-default {
+  color: #455a64;
+  background: #cfd8dc;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.btn-default:hover,
+.btn-default.active,
+.btn-default:active,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  color: #212121;
+  background: #ffc107;
+  border: none;
+  outline: none;
+}
+
+.btn.active, .btn:active {
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.75);
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 /*
