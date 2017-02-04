@@ -74,26 +74,19 @@ section {
   background: transparent;
 }
 
-.navbar-toggle {
-  border-radius: 3px;
-}
-
 .navbar-default .navbar-toggle {
-  border: none;
+  border: transparent;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
   background: #455a64;
 }
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-  background: none;
-}
-
-.navbar-default .navbar-toggle:focus .icon-bar,
-.navbar-default .navbar-toggle:hover .icon-bar {
-  background: #212121;
+  background: transparent;
 }
 
 /*
