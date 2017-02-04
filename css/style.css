@@ -274,9 +274,16 @@ h4 {
 */
 
 label {
-  color: #fff;
   font-weight: 400;
   cursor: pointer;
+}
+
+label, #contact p {
+  color: #fff;
+}
+
+#contact p:last-child {
+  margin-bottom: 30px;
 }
 
 .form-control {
