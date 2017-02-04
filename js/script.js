@@ -7,7 +7,7 @@ var $root = $("html, body");
 $(".navbar-nav a").click(function() {
   $root.animate({
     scrollTop: calcOffset(this)
-  }, 500);
+  }, 700);
 
     return false;
 });
