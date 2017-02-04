@@ -6,7 +6,7 @@ var $root = $("html, body");
 
 $(".navbar-nav a").click(function() {
   $root.animate({
-    scrollTop: $($.attr(this, "href")).offset().top - ($(this).attr("href") == "#about" ? 80 : 60)
+    scrollTop: calcOffset(this)
   }, 500);
 
     return false;
@@ -27,7 +27,20 @@ $(document).on("scroll", function() {
     $(this).scrollTop() >= $("#contact").position().top - 180) {
       changeActive("#contact");
   }
-}); 
+});
+
+var calcOffset = function(anchor) {
+  var offset;
+
+  if ($(window).width() < 768) {
+    offset = $($.attr(anchor, "href")).offset().top - 50;
+  }
+  else {
+    offset = $($.attr(anchor, "href")).offset().top - ($(anchor).attr("href") == "#about" ? 80 : 60);
+  }
+
+  return offset;
+}
 
 var changeActive = function(target) {
   $(".active").removeClass("active");
